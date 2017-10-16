@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>myPortfolio.com</title>
+		<style>
+			#topPanel{
+				position: relative;
+				width: 1000px;
+				height: 100px;
+				background-color: blue;
+			}
+			#Home{
+				position: absolute;
+				width: 100px;
+				height: 20px;
+				margin-left: 640px;
+				margin-top: 10px;
+				background-color: blue;
+				cursor: pointer;
+			}
+			#About{
+				position: absolute;
+				width: 100px;
+				height: 20px;
+				margin-left: 760px;
+				margin-top: 10px;
+				background-color: blue;
+				cursor: pointer;
+			}
+			#Contact{
+				position: absolute;
+				width: 100px;
+				height: 20px;
+				margin-left: 880px;
+				margin-top: 10px;
+				background-color: blue;
+				cursor: pointer;
+			}
+			#siteName{
+				float: left;
+				margin-left: 50px; 
+				margin-top: 10px;
+			}
+			#sliderContainer{
+				position: relative;
+				width: 1000px;
+				height: 900px;
+				margin-top: 20px;
+			}
+	
+			.myImage{
+				width: 1000px;
+				height: 900px;
+			}
+			.sldrBttnLft{
+				position: absolute;
+				top: 450px;
+				left:0px;
+				width: 40px;
+				height: 20px;
+				
+			}
+			.sldrBttnRght{
+				position: absolute;
+				top: 450px;
+				right: 0px;
+				width: 40px;
+				height: 20px;
+			}
+			.postContainer{
+				width: 600px;
+				height: 600px;
+			}
+			.postImage{
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="topPanel">
+			<h1 id="siteName">myPortfolio.com</h1>
+			<div id="Home">Home</div>
+			<div id="About">About</div>
+			<div id="Contact">Contact</div>
+		</div>
+		<div id="sliderContainer">
+			<img class= "myImage" src="pexels-photo-247932.jpeg"/>
+			<img class="myImage" src="pexels-photo-251225.jpeg"/>
+			<img class="myImage" src="teens-robot-future-science-39349.jpeg"/>
+			<button onclick="prvSld()" class="sldrBttnLft" ><-</button>
+			<button onclick="nxtSld()" class="sldrBttnRght">-></button>
+		</div>
+		<div class="postsContainer">
+			<h2>This is the first post</h2>
+			<img class="postImage" src= "cpu-processor-macro-pen-40879.jpeg"/>
+			<p>This is about this post. Anything you will write about this post will appear here.<br>
+				You can add any number of lines you want.<br>
+				I am adding three lines.
+			</p>
+		</div>
+		<div class="postsContainer">
+			<h2>This is the second post</h2>
+			<img class="postImage" src= "cpu-processor-macro-pen-40879.jpeg"/>
+			<p>This is about this post. Anything you will write about this post will appear here.<br>
+				You can add any number of lines you want.<br>
+				I am adding three lines.
+			</p>
+		</div>
+		<div class="postsContainer">
+			<h2>This is the third post</h2>
+			<img class="postImage" src= "cpu-processor-macro-pen-40879.jpeg"/>
+			<p>This is about this post. Anything you will write about this post will appear here.<br>
+				You can add any number of lines you want.<br>
+				I am adding three lines.
+			</p>
+		</div>
+		<script>
+			var num=0;
+			imgFunc(num);
+			function nxtSld(){
+				num++;
+				if(num>=x.length)
+					num=0;
+				imgFunc(num);
+			}
+			function prvSld(){
+				num--;
+				if(num<0)
+					num=x.length-1;
+				imgFunc(num);
+			}
+			function imgFunc(n){
+				x=document.getElementsByClassName("myImage");
+				for(i=0;i<x.length;i++){
+					x[i].style.display="none";
+				}
+				x[n].style.display="inline-block";
+			}
+		</script>
+	</body>
+</html>
+		
