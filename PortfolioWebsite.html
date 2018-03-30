@@ -1,78 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html> 
 	<head>
-		<title>Portfolio Website</title>
+		<title>myPortfolio.com</title>
 		<style>
 			#topPanel{
 				position: relative;
-				width: 1000px;
+				width: 100%;
 				height: 100px;
 				background-color: blue;
+			}	
+			#sliderContainer{
+				position: relative;
+				width: 100%;
+				height: 400px;
+				
 			}
+	
 			#Home{
 				position: absolute;
-				width: 100px;
+				width: 8%;
 				height: 20px;
-				margin-left: 640px;
-				margin-top: 10px;
+				left: 76%;
+				top: 10px;
 				background-color: blue;
 				cursor: pointer;
 			}
 			#About{
 				position: absolute;
-				width: 100px;
+				width: 8%;
 				height: 20px;
-				margin-left: 760px;
-				margin-top: 10px;
+				left: 84%;
+				top: 10px;
 				background-color: blue;
 				cursor: pointer;
 			}
 			#Contact{
 				position: absolute;
-				width: 100px;
+				width: 8%;
 				height: 20px;
-				margin-left: 880px;
-				margin-top: 10px;
+				left: 92%;
+				top: 10px;
 				background-color: blue;
 				cursor: pointer;
 			}
 			#siteName{
-				float: left;
-				margin-left: 50px; 
-				margin-top: 10px;
+				/*float: left;*/
+				position: absolute; 
+				left: 10%; 
+				top: 10%;
 			}
-			#sliderContainer{
-				position: relative;
-				width: 1000px;
-				height: 900px;
-				margin-top: 20px;
-			}
-	
+
 			.myImage{
-				width: 1000px;
-				height: 900px;
+				position: absolute;
+				width: 100%;
+				height: 400px;
 			}
 			.sldrBttnLft{
 				position: absolute;
-				top: 450px;
+				top: 190px;
 				left:0px;
 				width: 40px;
-				height: 20px;
+				height: 40px;
 				
 			}
 			.sldrBttnRght{
 				position: absolute;
-				top: 450px;
+				top: 190px;
 				right: 0px;
 				width: 40px;
-				height: 20px;
+				height: 40px;
 			}
 			.postContainer{
-				width: 600px;
+				width: 40%;
 				height: 600px;
 			}
 			.postImage{
-				width: 300px;
+				width: 40%;
 				height: 300px;
 			}
 		</style>
@@ -86,7 +89,7 @@
 			<div id="Contact">Contact</div>
 		</div>
 		<div id="sliderContainer">
-			<img class= "myImage" src="https://images.pexels.com/photos/753037/pexels-photo-753037.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>
+			<img class= "myImage" src="https://images.pexels.com/photos/753037/pexels-photo-753037.jpeg?				auto=compress&cs=tinysrgb&h=650&w=940"/>
 			<img class="myImage" src="https://images.pexels.com/photos/751476/pexels-photo-751476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
 			<img class="myImage" src="https://images.pexels.com/photos/9291/nature-bird-flying-red.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
 			<button onclick="prvSld()" class="sldrBttnLft" ><-</button>
